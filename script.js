@@ -11,6 +11,7 @@
 
 (function() {
     'use strict';
+    
     const originalWindowOpen = window.open;
     window.open = (...args) => {
         if (/^(.*\.)?(shopee|lazada)\./.test(args[0])) return;
